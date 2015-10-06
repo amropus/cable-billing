@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0981BA38-440C-445C-908A-7E4336DAEF84}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cablebilling</RootNamespace>
+    <AssemblyName>cablebilling</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backup.Designer.cs">
+      <DependentUpon>backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="begsplash2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="begsplash2.Designer.cs">
+      <DependentUpon>begsplash2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="collection.Designer.cs">
+      <DependentUpon>collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datewisecollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datewisecollection.Designer.cs">
+      <DependentUpon>datewisecollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="mainwindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainwindow.Designer.cs">
+      <DependentUpon>mainwindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="masterpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="masterpage.Designer.cs">
+      <DependentUpon>masterpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchcustomer.Designer.cs">
+      <DependentUpon>searchcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sms.Designer.cs">
+      <DependentUpon>sms.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="backup.resx">
+      <DependentUpon>backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="begsplash2.resx">
+      <DependentUpon>begsplash2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collection.resx">
+      <DependentUpon>collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datewisecollection.resx">
+      <DependentUpon>datewisecollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainwindow.resx">
+      <DependentUpon>mainwindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="masterpage.resx">
+      <DependentUpon>masterpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="searchcustomer.resx">
+      <DependentUpon>searchcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sms.resx">
+      <DependentUpon>sms.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
