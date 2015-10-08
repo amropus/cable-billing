@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(customer));
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.csttxtbalance = new System.Windows.Forms.TextBox();
@@ -66,15 +67,10 @@
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
+            resources.ApplyResources(this.label10, "label10");
             this.label10.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(385, 22);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(244, 33);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "Customer Creation";
             // 
             // groupBox1
             // 
@@ -97,169 +93,99 @@
             this.groupBox1.Controls.Add(this.cstdtp);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(76, 77);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(514, 357);
-            this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Customer Details";
             // 
             // csttxtbalance
             // 
-            this.csttxtbalance.Location = new System.Drawing.Point(168, 253);
+            resources.ApplyResources(this.csttxtbalance, "csttxtbalance");
             this.csttxtbalance.Name = "csttxtbalance";
-            this.csttxtbalance.Size = new System.Drawing.Size(81, 28);
-            this.csttxtbalance.TabIndex = 17;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(40, 253);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 18);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Opening Balance";
             // 
             // csttxtid
             // 
-            this.csttxtid.Enabled = false;
-            this.csttxtid.Location = new System.Drawing.Point(168, 32);
+            resources.ApplyResources(this.csttxtid, "csttxtid");
             this.csttxtid.Name = "csttxtid";
-            this.csttxtid.Size = new System.Drawing.Size(81, 28);
-            this.csttxtid.TabIndex = 7;
             // 
             // csttxtcharge
             // 
-            this.csttxtcharge.Location = new System.Drawing.Point(168, 322);
+            resources.ApplyResources(this.csttxtcharge, "csttxtcharge");
             this.csttxtcharge.Name = "csttxtcharge";
-            this.csttxtcharge.Size = new System.Drawing.Size(81, 28);
-            this.csttxtcharge.TabIndex = 15;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 68);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(40, 322);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(124, 18);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Installation Charge";
             // 
             // csttxtname
             // 
-            this.csttxtname.Location = new System.Drawing.Point(168, 67);
+            resources.ApplyResources(this.csttxtname, "csttxtname");
             this.csttxtname.Name = "csttxtname";
-            this.csttxtname.Size = new System.Drawing.Size(322, 28);
-            this.csttxtname.TabIndex = 1;
             // 
             // csttxtrent
             // 
-            this.csttxtrent.Location = new System.Drawing.Point(168, 288);
+            resources.ApplyResources(this.csttxtrent, "csttxtrent");
             this.csttxtrent.Name = "csttxtrent";
-            this.csttxtrent.Size = new System.Drawing.Size(81, 28);
-            this.csttxtrent.TabIndex = 13;
             // 
             // lbladd
             // 
-            this.lbladd.AutoSize = true;
-            this.lbladd.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbladd.Location = new System.Drawing.Point(40, 107);
+            resources.ApplyResources(this.lbladd, "lbladd");
             this.lbladd.Name = "lbladd";
-            this.lbladd.Size = new System.Drawing.Size(58, 18);
-            this.lbladd.TabIndex = 2;
-            this.lbladd.Text = "Address";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 288);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 18);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Monthly Rent";
             // 
             // csttxtaddress
             // 
-            this.csttxtaddress.Location = new System.Drawing.Point(168, 102);
-            this.csttxtaddress.Multiline = true;
+            resources.ApplyResources(this.csttxtaddress, "csttxtaddress");
             this.csttxtaddress.Name = "csttxtaddress";
-            this.csttxtaddress.Size = new System.Drawing.Size(322, 48);
-            this.csttxtaddress.TabIndex = 3;
             // 
             // csttxtstb
             // 
-            this.csttxtstb.Location = new System.Drawing.Point(168, 218);
+            resources.ApplyResources(this.csttxtstb, "csttxtstb");
             this.csttxtstb.Name = "csttxtstb";
-            this.csttxtstb.Size = new System.Drawing.Size(146, 28);
-            this.csttxtstb.TabIndex = 11;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 156);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mobile No.";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 218);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 18);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "STB No.";
             // 
             // csttxtmono
             // 
-            this.csttxtmono.Location = new System.Drawing.Point(168, 156);
+            resources.ApplyResources(this.csttxtmono, "csttxtmono");
             this.csttxtmono.Name = "csttxtmono";
-            this.csttxtmono.Size = new System.Drawing.Size(146, 28);
-            this.csttxtmono.TabIndex = 5;
             // 
             // cstdtp
             // 
-            this.cstdtp.Font = new System.Drawing.Font("Palatino Linotype", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstdtp.Location = new System.Drawing.Point(168, 190);
+            resources.ApplyResources(this.cstdtp, "cstdtp");
             this.cstdtp.Name = "cstdtp";
-            this.cstdtp.Size = new System.Drawing.Size(200, 22);
-            this.cstdtp.TabIndex = 9;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 33);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Customer ID";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 190);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 18);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Connection Date";
             // 
             // btngropubox
             // 
@@ -271,110 +197,76 @@
             this.btngropubox.Controls.Add(this.cstbtnedit);
             this.btngropubox.Controls.Add(this.label14);
             this.btngropubox.Controls.Add(this.btnclose1);
-            this.btngropubox.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngropubox.Location = new System.Drawing.Point(659, 77);
+            resources.ApplyResources(this.btngropubox, "btngropubox");
             this.btngropubox.Name = "btngropubox";
-            this.btngropubox.Size = new System.Drawing.Size(121, 236);
-            this.btngropubox.TabIndex = 34;
             this.btngropubox.TabStop = false;
             // 
             // cstbtndelete
             // 
-            this.cstbtndelete.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstbtndelete.Location = new System.Drawing.Point(19, 58);
+            resources.ApplyResources(this.cstbtndelete, "cstbtndelete");
             this.cstbtndelete.Name = "cstbtndelete";
-            this.cstbtndelete.Size = new System.Drawing.Size(75, 28);
-            this.cstbtndelete.TabIndex = 30;
-            this.cstbtndelete.Text = "Delete";
             this.cstbtndelete.UseVisualStyleBackColor = true;
             // 
             // cstbtnupdate
             // 
-            this.cstbtnupdate.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstbtnupdate.Location = new System.Drawing.Point(19, 146);
+            resources.ApplyResources(this.cstbtnupdate, "cstbtnupdate");
             this.cstbtnupdate.Name = "cstbtnupdate";
-            this.cstbtnupdate.Size = new System.Drawing.Size(75, 28);
-            this.cstbtnupdate.TabIndex = 29;
-            this.cstbtnupdate.Text = "Update";
             this.cstbtnupdate.UseVisualStyleBackColor = true;
+            this.cstbtnupdate.Click += new System.EventHandler(this.cstbtnupdate_Click);
             // 
             // cstbtncancel
             // 
-            this.cstbtncancel.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstbtncancel.Location = new System.Drawing.Point(19, 190);
+            resources.ApplyResources(this.cstbtncancel, "cstbtncancel");
             this.cstbtncancel.Name = "cstbtncancel";
-            this.cstbtncancel.Size = new System.Drawing.Size(75, 28);
-            this.cstbtncancel.TabIndex = 27;
-            this.cstbtncancel.Text = "Cancel";
             this.cstbtncancel.UseVisualStyleBackColor = true;
             // 
             // cstbtnsave
             // 
-            this.cstbtnsave.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstbtnsave.Location = new System.Drawing.Point(19, 13);
+            resources.ApplyResources(this.cstbtnsave, "cstbtnsave");
             this.cstbtnsave.Name = "cstbtnsave";
-            this.cstbtnsave.Size = new System.Drawing.Size(75, 28);
-            this.cstbtnsave.TabIndex = 26;
-            this.cstbtnsave.Text = "Save";
             this.cstbtnsave.UseVisualStyleBackColor = true;
+            this.cstbtnsave.Click += new System.EventHandler(this.cstbtnsave_Click);
             // 
             // cstbtnedit
             // 
-            this.cstbtnedit.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cstbtnedit.Location = new System.Drawing.Point(19, 102);
+            resources.ApplyResources(this.cstbtnedit, "cstbtnedit");
             this.cstbtnedit.Name = "cstbtnedit";
-            this.cstbtnedit.Size = new System.Drawing.Size(75, 28);
-            this.cstbtnedit.TabIndex = 28;
-            this.cstbtnedit.Text = "Edit";
             this.cstbtnedit.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(16, 217);
+            resources.ApplyResources(this.label14, "label14");
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 18);
-            this.label14.TabIndex = 1;
             // 
             // btnclose1
             // 
-            this.btnclose1.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclose1.Location = new System.Drawing.Point(276, 13);
+            resources.ApplyResources(this.btnclose1, "btnclose1");
             this.btnclose1.Name = "btnclose1";
-            this.btnclose1.Size = new System.Drawing.Size(111, 31);
-            this.btnclose1.TabIndex = 25;
-            this.btnclose1.Text = "Close";
             this.btnclose1.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.gridcust);
-            this.panel2.Location = new System.Drawing.Point(76, 440);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(514, 108);
-            this.panel2.TabIndex = 35;
             // 
             // gridcust
             // 
             this.gridcust.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridcust.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.gridcust, "gridcust");
             this.gridcust.Name = "gridcust";
-            this.gridcust.Size = new System.Drawing.Size(488, 86);
-            this.gridcust.TabIndex = 0;
+            this.gridcust.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridcust_CellContentClick);
             // 
             // customer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(980, 551);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btngropubox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label10);
             this.Name = "customer";
-            this.Text = "customer";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.btngropubox.ResumeLayout(false);

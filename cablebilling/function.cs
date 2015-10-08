@@ -11,12 +11,70 @@ namespace cablebilling
     class function
     {
         SqlCommand cmd;
-        SqlConnection con;
         DataTable dt;
         SqlDataAdapter da;
-    
-    
-    SqlConnection con=new SqlConnection()
-    
+        SqlDataReader dr;
+        // SqlConnection con;
+
+
+        SqlConnection con = new SqlConnection(@"Data Source=RONAK-PC\SQLEXPRESS1;Initial Catalog=cabledb;Integrated Security=True");
+
+        public int executedml(string str)
+        {
+            try
+            {
+                con.Close();
+                int row = 0;
+                cmd = new SqlCommand(str, con);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                return row;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
+        public DataTable filldatatable(string str)
+        {
+            try
+            {
+                con.Close(); 
+                dt = new DataTable();
+                da = new SqlDataAdapter(str, con);
+                da.Fill(dt);
+                return dt;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+        }
+
+        public SqlDataReader reader(string str)
+       {
+
+           try 
+       { 
+           con.Close();
+           cmd = new SqlCommand(str, con);
+           con.Open();
+           dr = cmd.ExecuteReader();
+           return dr;
+       } 
+       
+          catch (Exception)
+           {
+               throw;
+           }
+        
+        
+        }
     }
 }

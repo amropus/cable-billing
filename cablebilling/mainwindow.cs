@@ -26,5 +26,12 @@ namespace cablebilling
             Application.Run(new begsplash2());
 
         }
+
+        private void customerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            customer newmdichild = new customer();
+            newmdichild.MdiParent = this;
+            newmdichild.Show();
+        }
     }
 }
